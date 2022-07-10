@@ -24,7 +24,7 @@ export default function Home() {
       </Grid>
       <Grid container item xs={6} spacing={5} className={styles.owner}>
         <Grid item xs={12} md={5}>
-          <img src={"/owner.jpg"} />
+          <img alt={"owner image"} height={"auto"} width={"100%"} src={"/owner.jpg"} />
         </Grid>
         <Grid item xs={12} md={7}>
           <Typography>
@@ -53,7 +53,6 @@ export default function Home() {
             glamming brides for their big day!
           </Typography>
         </Grid>
-
       </Grid>
     </Grid>
   );

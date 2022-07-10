@@ -8,16 +8,16 @@
 
 :root {
   /* Banner */
-  --banner-outer-height: 75px;
+  --banner-outer-height: 55px;
   --banner-inner-height: 40px;
-  --banner-height-difference: calc(
-          var(--banner-outer-height) - var(--banner-inner-height)
-  );
   --banner-bg: #DDC3BA;
 
   /* Header */
   --header-outer-height: 110px;
   --header-inner-height: 70px;
+  --header-height-difference: calc(
+          var(--header-outer-height) - var(--header-inner-height)
+  );
   --header-bg: #FFF;
   --primary-color:#DDC3BA;
 }

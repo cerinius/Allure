@@ -14,10 +14,10 @@ export default function Layout({ children }) {
           <img src="https://assets.codepen.io/285131/acme-2.svg" />
         </div>
         <nav className={styles.headerNavigation}>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact Us</a>
+          <a href="/">Home</a>
+          <a href="/aboutUs">About</a>
+          <a href="/inquiry">Inquiry</a>
+          <a href="contactUs">Contact Us</a>
           <button>Menu</button>
         </nav>
       </div>

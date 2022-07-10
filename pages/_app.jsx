@@ -8,7 +8,6 @@ import theme from "../styles/theme";
 function MyApp({ Component, pageProps }) {
   return (
     <StylesProvider injectFirst>
-
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout Component={Component}>
