@@ -12,9 +12,8 @@ export default function InquiryField({
   onBlur,
   error,
   touched,
-  total,
   loading,
-  entry
+  entry,
 }) {
   return (
     <div
@@ -32,7 +31,7 @@ export default function InquiryField({
         select={true}
         name={"type"}
         id={"type"}
-        onChange={()=> onChange}
+        onChange={(event) => onChange(event.target.name, event.target.value)}
         onBlur={onBlur}
         value={entry.name}
         placeholder={"Select Type"}
@@ -45,17 +44,31 @@ export default function InquiryField({
         <MenuItem value={"flowerGirl"}>Flower girl</MenuItem>
       </TextField>
       <FormControlLabel
-        control={<Checkbox checked={entry.hair} />}
+        control={
+          <Checkbox
+            name={"hair"}
+            onChange={(event) => onChange(event.target.name, !entry.hair)}
+            checked={entry.hair}
+          />
+        }
         label={<Typography variant={"h6"}> Hair</Typography>}
       />
       <FormControlLabel
-        control={<Checkbox checked={entry.makeUp} />}
+        control={
+          <Checkbox
+            name={"makeUp"}
+            onChange={(event) => {
+              onChange(event.target.name, !entry.makeUp);
+            }}
+            checked={entry.makeUp}
+          />
+        }
         label={<Typography variant={"h6"}> Make Up</Typography>}
       />
       {loading ? (
         <Skeleton width={"100px"} height={"50px"} />
       ) : (
-        <TextField>{entry.total}</TextField>
+        <TextField variant={"filled"} disabled={true} value={entry.total} />
       )}
     </div>
   );
