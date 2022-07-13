@@ -14,6 +14,7 @@ export default function InquiryField({
   touched,
   total,
   loading,
+  entry
 }) {
   return (
     <div
@@ -31,8 +32,9 @@ export default function InquiryField({
         select={true}
         name={"type"}
         id={"type"}
-        onChange={onChange}
+        onChange={()=> onChange}
         onBlur={onBlur}
+        value={entry.name}
         placeholder={"Select Type"}
         label={"Select type"}
         helperText={error && touched ? error : ""}
@@ -43,17 +45,17 @@ export default function InquiryField({
         <MenuItem value={"flowerGirl"}>Flower girl</MenuItem>
       </TextField>
       <FormControlLabel
-        control={<Checkbox checked={true} />}
+        control={<Checkbox checked={entry.hair} />}
         label={<Typography variant={"h6"}> Hair</Typography>}
       />
       <FormControlLabel
-        control={<Checkbox checked={true} />}
+        control={<Checkbox checked={entry.makeUp} />}
         label={<Typography variant={"h6"}> Make Up</Typography>}
       />
       {loading ? (
         <Skeleton width={"100px"} height={"50px"} />
       ) : (
-        <TextField>{total}</TextField>
+        <TextField>{entry.total}</TextField>
       )}
     </div>
   );
