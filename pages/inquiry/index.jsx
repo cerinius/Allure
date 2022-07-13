@@ -53,7 +53,7 @@ export default function Inquiry() {
       setEntries((entries) => [...entries, defaultEntry]);
     }
   }, [fieldsCounter]);
-  console.log(entries);
+
   return (
     <Container>
       <form>
