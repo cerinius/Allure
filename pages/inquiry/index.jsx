@@ -59,6 +59,9 @@ export default function Inquiry() {
       <form>
         <Grid container spacing={4}>
           <Grid item xs={12}>
+            <span />
+          </Grid>
+          <Grid item xs={12}>
             <Typography align={"center"} variant={"h3"}>
               Submit an Inquiry
             </Typography>
