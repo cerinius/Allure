@@ -10,7 +10,7 @@
   /* Banner */
   --banner-outer-height: 55px;
   --banner-inner-height: 40px;
-  --banner-bg: #DDC3BA;
+
 
   /* Header */
   --header-outer-height: 110px;
@@ -19,7 +19,7 @@
           var(--header-outer-height) - var(--header-inner-height)
   );
   --header-bg: #FFF;
-  --primary-color: #000;
+  --primary-color: #DDC3BA;
 }
 a {
   color: #A8A8AC;
