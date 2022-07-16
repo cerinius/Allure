@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <div className={styles.bannerOuter}>
         <div className={`${styles.bannerInner} ${styles.responsiveWrapper}`}>
           <p>
-            Save up to 70% on selected merch. <a href="#">Go to sale</a>
+            <a href="/inquiry"> Book now for your 2023 wedding!</a>
           </p>
         </div>
       </div>
