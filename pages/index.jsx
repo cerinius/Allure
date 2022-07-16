@@ -42,45 +42,47 @@ export default function Home() {
           <br />
         </Typography>
       </Grid>
-      <Grid container item xs={6} spacing={5} className={styles.owner}>
-        <Grid item xs={12} md={5}>
-          <img
-            alt={"owner image"}
-            height={"auto"}
-            width={"100%"}
-            src={"/owner.jpg"}
-          />
-        </Grid>
-        <Grid item xs={12} md={7}>
-          <Typography>ASHTON DONER</Typography>
-          <Typography>OWNER & ARTIST</Typography>
-          <Typography>
-            Makeup has been a lifetime passion for Ashton. As a little girl, you
-            could often find her brightly painting the faces of her mother and
-            grandmother with the iconic shades of the 80s and early 90s. Today,
-            that love of beauty has blossomed into a successful career!
-            <br />
-            Following her dreams, Ashton pursed her love for makeup and
-            graduated from the Cosmetic Techniques & Management Program at
-            Sheridan College. Throughout her 13 year career, Ashton's worked
-            with Benefit Canada as a Brow Ambassador, developed looks for a
-            national John Frieda ad campaign and volunteered with Look Good Feel
-            Better. Ashton was also a mentor at the 2018 Young Women's
-            Conference in Niagara Falls where she got to share her story of
-            becoming a female entrepreneur. Ashton worked as the Head Makeup
-            Artist with Beyoutiful Brides before becoming the Owner in September
-            2017.
-            <br />
-            Her greatest achievement is her part in each and every one of her
-            bride's special day. Ashton knows how important it is to feel
-            beyoutiful on your wedding day and works closely with each bride to
-            ensure her vision is fully realized, so she looks and feels her most
-            beyoutiful self!
-            <br />
-            Ashton lives in Niagara Falls with her husband and pup penny. She
-            enjoys travelling the world when she's not glamming brides for their
-            big day!
-          </Typography>
+      <Grid item xs={12}>
+        <Grid container spacing={5} className={styles.owner}>
+          <Grid item xs={12} md={5}>
+            <img
+              alt={"owner image"}
+              height={"auto"}
+              width={"100%"}
+              src={"/owner.jpg"}
+            />
+          </Grid>
+          <Grid item xs={12} md={7}>
+            <Typography>ASHTON DONER</Typography>
+            <Typography>OWNER & ARTIST</Typography>
+            <Typography>
+              Makeup has been a lifetime passion for Ashton. As a little girl,
+              you could often find her brightly painting the faces of her mother
+              and grandmother with the iconic shades of the 80s and early 90s.
+              Today, that love of beauty has blossomed into a successful career!
+              <br />
+              Following her dreams, Ashton pursed her love for makeup and
+              graduated from the Cosmetic Techniques & Management Program at
+              Sheridan College. Throughout her 13 year career, Ashton's worked
+              with Benefit Canada as a Brow Ambassador, developed looks for a
+              national John Frieda ad campaign and volunteered with Look Good
+              Feel Better. Ashton was also a mentor at the 2018 Young Women's
+              Conference in Niagara Falls where she got to share her story of
+              becoming a female entrepreneur. Ashton worked as the Head Makeup
+              Artist with Beyoutiful Brides before becoming the Owner in
+              September 2017.
+              <br />
+              Her greatest achievement is her part in each and every one of her
+              bride's special day. Ashton knows how important it is to feel
+              beyoutiful on your wedding day and works closely with each bride
+              to ensure her vision is fully realized, so she looks and feels her
+              most beyoutiful self!
+              <br />
+              Ashton lives in Niagara Falls with her husband and pup penny. She
+              enjoys travelling the world when she's not glamming brides for
+              their big day!
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
