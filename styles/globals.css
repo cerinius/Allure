@@ -19,7 +19,7 @@
           var(--header-outer-height) - var(--header-inner-height)
   );
   --header-bg: #FFF;
-  --primary-color:#DDC3BA;
+  --primary-color: #000;
 }
 a {
   color: #A8A8AC;
