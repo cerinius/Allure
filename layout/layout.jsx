@@ -1,6 +1,8 @@
 import styles from "./Layout.module.css";
 import { Grid, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
+import { ThemeProvider } from "@mui/styles";
+import theme from "../styles/theme";
 
 export default function Layout({ children }) {
   return (
@@ -27,11 +29,26 @@ export default function Layout({ children }) {
         </div>
       </div>
       <div className={styles.body}>{children}</div>
-      <div
+      <Grid
+        item
+        xs={12}
+        container
+        spacing={3}
         style={{
           marginTop: "5%",
         }}
       >
+        <Grid item xs={12}>
+          <Typography
+            variant={"h4"}
+            style={{
+              color: theme.palette.primary.main,
+            }}
+            align={"center"}
+          >
+            Featured On
+          </Typography>
+        </Grid>
         <Grid
           item
           xs={12}
@@ -190,7 +207,7 @@ export default function Layout({ children }) {
             </Grid>
           </Grid>
         </Grid>
-      </div>
+      </Grid>
     </>
   );
 }
