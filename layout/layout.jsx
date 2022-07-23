@@ -1,5 +1,5 @@
 import styles from "./Layout.module.css";
-import { Container, Grid, List, ListItem, Typography } from "@mui/material";
+import { Grid, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
 
 export default function Layout({ children }) {
@@ -19,7 +19,7 @@ export default function Layout({ children }) {
           </div>
           <nav className={styles.headerNavigation}>
             <a href="/">Home</a>
-            <a href="/aboutUs">About</a>
+            <a href="/services">Services</a>
             <a href="/inquiry">Inquiry</a>
             <a href="contactUs">Contact Us</a>
             <button>Menu</button>
@@ -27,7 +27,11 @@ export default function Layout({ children }) {
         </div>
       </div>
       <div className={styles.body}>{children}</div>
-      <div>
+      <div
+        style={{
+          marginTop: "5%",
+        }}
+      >
         <Grid
           item
           xs={12}

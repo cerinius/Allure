@@ -19,11 +19,15 @@
           var(--header-outer-height) - var(--header-inner-height)
   );
   --header-bg: #FFF;
-  --primary-color: #DDC3BA;
+  --primary-color: #EEE4DB;
 }
 a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover{
   color: #A8A8AC;
 }
 body {
-  color: #A8A8AC;
+  color: #000;
 }

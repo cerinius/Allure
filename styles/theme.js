@@ -1,11 +1,11 @@
-import {  responsiveFontSizes } from "@mui/material"
-import { createTheme } from '@mui/material/styles';
+import { responsiveFontSizes } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 
 // Create a theme instance.
 let theme = createTheme({
   palette: {
     primary: {
-      main: "#DDC3BA",
+      main: "#EEE4DB",
     },
     secondary: {
       main: "#A8A8AC",
