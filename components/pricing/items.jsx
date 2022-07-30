@@ -26,6 +26,14 @@ export default function Items() {
         { hair: true, makeUp: true, amount: 80 },
       ],
     },
+    {
+      type: "Flower Girl (5-10)",
+      pricing: [
+        { hair: true, amount: 50 },
+        { makeUp: true, amount: 10 },
+        { hair: true, makeUp: true, amount: 70 },
+      ],
+    },
   ];
   return (
     <Grid container spacing={3}>

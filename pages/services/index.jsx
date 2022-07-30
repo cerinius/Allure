@@ -1,9 +1,18 @@
-import { Container, Grid, List, ListItem, Typography } from "@mui/material";
+import {
+  Button,
+  Container,
+  Grid,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/material";
 import styles from "../../styles/Home.module.css";
 import Pricing from "../../components/pricing";
 import AllServices from "../../components/services/allServices";
+import { useRouter } from "next/router";
 
 export default function services() {
+  const router = useRouter();
   return (
     <Grid container>
       <Grid item xs={12}>
@@ -73,31 +82,29 @@ export default function services() {
                 </Grid>
               </Container>
             </Grid>
-            <Grid item xs={12}>
-              <Typography align={"center"} variant={"h5"}>
-                <b>Our approach is very simple</b>
-              </Typography>
-              <Typography align={"center"} variant={"h5"}>
-                We know it’s the day you’ve been dreaming about your entire
-                life.
-              </Typography>
-              <Typography align={"center"} variant={"h5"}>
-                We know you deserve to be pampered.
-              </Typography>
-              <Typography align={"center"} variant={"h5"}>
-                We’ll help you face your wedding day relaxed, poised and
-                confident.
-              </Typography>
-              <Typography align={"center"} variant={"h5"}>
-                Be inspired. Be elegant. Be beautiful. Be alluring.
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <AllServices />
-            </Grid>
 
             <Grid item xs={12}>
               <Pricing />
+            </Grid>
+
+            <Grid
+              item
+              xs={12}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Button
+                variant={"contained"}
+                color={"primary"}
+                onClick={() => router.push("/inquiry")}
+              >
+                Inquire
+              </Button>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography align={"center"}>Disclamer</Typography>
             </Grid>
           </Grid>
         </Container>
